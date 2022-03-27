@@ -3,24 +3,26 @@ class Control:
     
     def enlazar(self, tv):
         self.tv = tv
-        # tv.setControl(self)
+        tv.setControl(self)
     def turnOn(self):
-        tv.turnOn()
-    # def turnOff(self):
-    #     TV.turnOff()
-    # def canalUp(self):
-    #     TV.canalUp()
-    # def canalDown(self):
-    #     TV.canalDown()
-    # def volumenUp(self):
-    #     TV.volumenUp()
-    # def volumenDown(self):
-    #     TV.volumenDown()
-    # def setCanal(self):
-    #     TV.setCanal()
+        self.tv.turnOn
+        #TV.turnOn
+    def turnOff(self):
+        self.tv.turnOff
+        #TV.turnOff
+    def canalUp(self):
+        self.tv.canalUp
+        #TV.canalUp
+    def canalDown(self):
+        self.tv.canalDown
+        #TV.canalDown
+    def volumenUp(self):
+        self.tv.volumenUp
+        #TV.volumenUp
+    def volumenDown(self):
+        self.tv.volumenDown
+        #TV.volumenDown
+    def setCanal(self, can):
+        self.tv.setCanal(can)
+        #TV.setCanal
     
-tv1 = TV('marca1', True)
-
-# control1 = Control()
-# control1.enlazar(tv1)
-# control1.turnOn()

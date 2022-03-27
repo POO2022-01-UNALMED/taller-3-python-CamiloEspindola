@@ -1,13 +1,14 @@
 class TV:
-    # numTV = 0
+    numTV = 0
+        
     def __init__(self, marca, estado):
         self.marca = marca
         self.estado = estado
-        canal = 1
-        volumen = 1
-        precio = 500
-        # self.control
-        numTV = 1
+        self.canal = 1
+        self.volumen = 1
+        self.precio = 500
+        control = None
+        TV.numTV+=1
     
     
     #Tendrá los métodos set y get para los atributos marca, control, precio, volumen y canal.
@@ -26,7 +27,7 @@ class TV:
             self.canal = can
     @staticmethod
     def setNumTV(self, num):
-        numTv = num    
+        NumTv = num    
     
     #getters
     def getMarca(self):
@@ -47,7 +48,6 @@ class TV:
     #funciones 
     def turnOn(self):
         estado = True
-        print('prendido')
     def turnOff(self):
         estado = False
     def canalUp(self):
