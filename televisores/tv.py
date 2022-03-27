@@ -47,9 +47,9 @@ class TV:
         return self.estado
     #funciones 
     def turnOn(self):
-        estado = True
+        self.estado = True
     def turnOff(self):
-        estado = False
+        self.estado = False
     def canalUp(self):
         if(self.estado == True and self.canal<120):
             self.canal+=1
