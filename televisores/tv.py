@@ -25,9 +25,9 @@ class TV:
     def setCanal(self, can):
         if(self.estado == True and self.canal>0 and self.canal<=120):
             self.canal = can
-    @staticmethod
-    def setNumTV(self, num):
-        NumTv = num    
+    @classmethod
+    def setNumTV(cls, num):
+        cls.numTV = num    
     
     #getters
     def getMarca(self):
