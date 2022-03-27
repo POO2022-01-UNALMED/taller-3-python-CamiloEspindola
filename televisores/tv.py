@@ -20,10 +20,10 @@ class TV:
     def setPrecio(self, pre):
         self.precio = pre
     def setVolumen(self, vol):
-        if(self.estado == True and self.volumen<=7 and self.volumen >=0):
+        if(self.estado == True and vol<=7 and vol >=0):
             self.volumen = vol
     def setCanal(self, can):
-        if(self.estado == True and self.canal>0 and self.canal<=120):
+        if(self.estado == True and can>0 and can<=120):
             self.canal = can
     @classmethod
     def setNumTV(cls, num):
