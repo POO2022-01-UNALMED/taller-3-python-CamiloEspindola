@@ -40,9 +40,9 @@ class TV:
         return self.volumen
     def getCanal(self):
         return self.canal
-    @staticmethod
-    def getNumTV(self):
-        return self.numTV
+    @classmethod
+    def getNumTV(cls):
+        return cls.numTV
     def getEstado(self):
         return self.estado
     #funciones 
